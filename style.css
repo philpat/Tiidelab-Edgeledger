@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+#navbar{
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-list{
+  list-style: none;
+  display: flex;
+}
+a{
+
+  text-decoration: none;
+}
+p{
+  margin: 0.75rem 0;
+}
+li a{
+  padding: 0.75rem;
+  color: #fff;
+  margin: 0 0.25rem;
+}
+li a:hover{
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+/* utility */
+.primary-color{
+  color: #93cb52;
+}
+.bg-color{
+  background-color: #93cb52;
+}
+.primary-text{
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.lead-text{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn{
+  color: #fff;
+  background-color: #93cb52;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  border: none;
+}
+.btn-dark{
+  background: #333;
+  color: #fff;
+}
+.bg-dark{
+  background: #333;
+  color: #fff;
+}
+.bg-primary{
+  background: #679e27;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #679e27;
+}
+.list{
+  margin: 0.5rem 0;
+  list-style: none;
+
+}
+.list li{
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
+
+#hero-section{
+  background: #333 url(../images/edgeledge1.avif) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+.hero-content{
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#what{
+  padding: 2rem;
+}
+.container{
+  /* width: 1100px; */
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+.description-head{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.card{
+  display: flex;
+  padding: 1rem;
+  
+}
+.card-item{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+.card-item i{
+  background-color: #93cb52;
+  padding: 0.8rem;
+  border-radius: 50px;
+  margin-bottom: 0.5rem;
+}
+.card-item h3{
+  margin-bottom: 0.5rem;
+}
+#who{
+  display: flex;
+}
+#who div{
+  flex: 1;
+}
+#who .who-img{
+  background: url(../images/who-group.jpg) no-repeat center center/cover;
+}
+.who-text{
+  padding: 2rem ;
+}
+#clients{
+  padding: 1.5rem 0;
+}
+#clients .card{
+  display: flex;
+}
+#clients .card img{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+#contact{
+  display: flex;
+}
+
+.contact-form{
+  padding: 20px;
+}
+#main-footer{
+  text-align: center;
+  padding: 0.5rem 0;
+}
+#contact .map, #contact .contact-form{
+  flex: 1;
+}
+#contact .contact-form input, #contact .contact-form textarea{
+  width: 100%;
+  padding: 0.5rem;
+}
+#contact .map, #contact .form-group{
+  margin: 0.75rem;
+}
+#contact .map, #contact label{
+  display: block;
+}
+
+
+
+
+
+@media(max-width:768px){
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo{
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  #navbar ul{
+    padding: 0.5rem;
+  }
+  .hero-content{
+    top: 100px;
+    bottom: 0;
+  }
+  #what .card{
+    display: block;
+    padding: 1rem;
+  }
+  #what .card .card-item{
+    display: flex;
+    text-align: left;
+  }
+  #what .card .card-item i{
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+  }
+  #client .card{
+    display: block;
+  }
+  .container{
+    width: auto;
+    padding: 0 ;
+    margin: 0;
+    overflow: hidden;
+  }
+  .who-img{
+    display: none;
+  }
+  #contact{
+    display: flex;
+    flex-direction: column;
+  }
+.map{
+  display: none !important;
+}
+}
